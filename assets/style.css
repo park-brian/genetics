@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300|Open+Sans+Condensed:300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300|Open+Sans+Condensed:300);
 
 .wf-loading h1, .wf-loading h2, .wf-loading a, .wf-loading li, .wf-loading span, .wf-loading p {
 	visibility:hidden;
@@ -11,14 +11,14 @@ body {
 
 h1 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
+	font-size: 19px;
 	font-weight: 300;
-	text-shadow: 0px 0px 1px #a6a7a8;
+	text-shadow: 0px 0px 2px #a6a7a8;
 }
 
 h2 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 400;
 	color: #004b85;
 	text-shadow: 0px 0px 1px #a6a7a8;
@@ -74,6 +74,10 @@ li:hover {
 
 .right-align {
 	text-align: right;
+}
+
+.italic {
+	font-style: italic;	
 }
 
 .header {
