@@ -3,7 +3,37 @@
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 	<script type="text/javascript" scr="assets/scripts.js"></script>
+	
+	<script>
+	function getCoinPath() {
+	var contents = "<img src='assets/images/coins/"
+	
+	contents += Math.ceil(Math.random() * 12) + ".jpg' width='100px'></img>";
+	
+	return contents;
+	}
 
+	function flipCoins() {
+	var selected = document.getElementById('selector');
+	var val = parseInt(selected.value);
+	var coins = "";
+	
+	for (var i = 0; i < val; i += 1)
+		coins += getCoinPath();
+		
+	document.getElementById('coins').innerHTML = coins;
+	
+	}
+	
+	function updateNum() {
+		var selected = document.getElementById('selector');
+		
+		document.getElementById('num').innerHTML = selected.value;
+	}
+	
+	</script>
+
+	
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html">
 	<title>GeneTool - Probability and Statistics in Genetics</title>	
@@ -46,9 +76,16 @@
 				respective probabilities.</p><br>
 			<p>To illustrate this principle, here are a few examples:</p><br>
 			<h3>1. Coins and Dice</h3>
-			<p>A coin is flipped twice. What is the probability of getting heads both times? How about tails?</p>
+			<p>A coin is flipped 
+			<select id='selector' onclick="updateNum()">
+				<option value="2" >2</option>
+				<option value="3" >3</option>
+				<option value="4" >4</option>
+			</select>
+			times. What is the probability of getting heads all
+			<span id="num">2</span>
+			times? How about tails? <button id="flip" class="bt" onclick="flipCoins()">Flip Coins</button></p>
 			<div id="coins">
-			<p><img src="assets/images/heads_small.gif" /><img src="assets/images/tails_small.gif" /></p>
 			</div>
 			
 			<br>
