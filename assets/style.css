@@ -121,4 +121,10 @@ li:hover {
 	
 }
 
+.super {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 8px;
+	vertical-align: super;
+}
+
 
