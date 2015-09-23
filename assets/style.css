@@ -127,4 +127,35 @@ li:hover {
 	vertical-align: super;
 }
 
+table {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;	
+}
+
+table td {
+	border-bottom: 1px solid black;
+	padding: 5px;
+	min-width: 50px;
+}
+
+button {
+	padding: 4px;
+	color: white;
+	background-color: #004b85;
+	box-shadow: 0px 0px 3px 2px #a6a7a8;
+	
+	border-style: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:active {
+	cursor: pointer;
+	padding: 4px;
+	color: white;
+	background-color: #e4263d;
+	box-shadow: 0px 0px 4px 2px #a6a7a8;
+	border-style: none;
+	border-radius: 4px;
+}
 

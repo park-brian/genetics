@@ -48,26 +48,34 @@
 				respective probabilities.</p><br>
 			<p>To illustrate this principle, here are a few examples:</p><br>
 			<h3>1. Coins and Dice</h3>
-			<p>A coin is flipped 
-			<select id='selector' onchange="updateNum()">
+			<p> 
+			<select id='selector'>
 				<option value="2" >2</option>
 				<option value="3" >3</option>
 				<option value="4" >4</option>
+				<option value="5" >5</option>
+				<option value="6" >6</option>
 			</select>
-			times. What is the probability of getting heads all
-			<span id="num">2</span>
-			times? How about tails? <button id="flip" class="bt" onclick="flipCoins()">Flip Coins</button></p>
-			<div id="coins" style="height: 40px;">
-<!--			<img id="c1" src="assets/images/coins/1.jpg" style="display: none"></img>
-			<img id="c2" src="assets/images/coins/2.jpg" style="display: none"></img>
-			<img id="c3" src="assets/images/coins/3.jpg" style="display: none"></img>
-			<img id="c4" src="assets/images/coins/4.jpg" style="display: none"></img>
-			<img id="c5" src="assets/images/coins/5.jpg" style="display: none"></img>
-			<img id="c6" src="assets/images/coins/6.jpg" style="display: none"></img>
-			<img id="c7" src="assets/images/coins/7.jpg" style="display: none"></img>
-			<img id="c8" src="assets/images/coins/8.jpg" style="display: none"></img> -->
+			coins are flipped. What is the probability of getting all heads? &nbsp;
+			<button id="flip" class="bt" onclick="generator()">Flip Coins</button></p>
+<!--			<button id="stopflip" class="bt" onclick="stopFlipCoins()">Stop</button></p> -->
+			<div id="coins" style="height: 100px; text-align: center; margin-top: 10px;">
 			</div>
-			
+			<table>
+				<tr>
+					<th>Number of Coins</th>
+					<th>Number of Trials</th>
+					<th>Heads</th>
+					<th>Tails</th>
+					<th>Number of times getting all heads/tails</th>
+				</tr>
+				<tr>
+					<td id = "num">2</td>
+					<td id = "trials">0</td>
+					<td id = "heads">0</td>
+					<td id = "tails">0</td>
+					<td id = "all">0</td>
+			</table>
 			<br>
 			<h2>The Addition Rule</h2>
 			<p class="italic">The probability of any one of several different outcomes occuring is found by adding the
