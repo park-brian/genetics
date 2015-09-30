@@ -28,9 +28,9 @@ function generator() {
 		
 		// ---------- Animate Coins ----------
 		var val = parseInt(document.getElementById('selector').value);	// get number of coins
-		var coins = "";
 		var coinArray = new Array(val);
-		var same = true;
+		var coins = "";
+		var allHeads = true;
 		
 		for (var i = 0; i < val; i ++) {
 			var r = Math.ceil(Math.random() * 12);	// random number from 1-12
@@ -45,16 +45,15 @@ function generator() {
 			coins += '<img src="assets/images/coins/' + r + '.jpg"></img>';
 		}
 		
-		for (var j = 0; j < coinArray.length - 1; j += 2) {
-			
-			console.log("comparing " + coinArray[j] + " and " + coinArray[j+1]);
-			if (coinArray[j] % 2 != coinArray[j+1] % 2) {
-				console.log("found no streak!");
-				same = false;
+		
+		
+		for (var j = 0; j < coinArray.length; j += 1) {
+			if (coinArray[j] % 2 != 1) {
+				allHeads = false;
 			}
 		}
 		
-		if (same) {
+		if (allHeads) {
 			streak ++;
 		}
 		

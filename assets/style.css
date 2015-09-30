@@ -127,13 +127,28 @@ li:hover {
 	vertical-align: super;
 }
 
-table {
+.center {
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table th {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 10px;	
+	font-size: 10px;
+	font-weight: 400;
 }
 
 table td {
-	border-bottom: 1px solid black;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;
+	
+	
+	font-weight: 400;
+	
+	text-align: center;
+	border-bottom: 1px solid #f8f9fe;
 	padding: 5px;
 	min-width: 50px;
 }
