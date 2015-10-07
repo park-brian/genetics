@@ -128,10 +128,11 @@ li:hover {
 }
 
 .center {
-	width: 95%;
+	width: 280px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 }
 
 table {
