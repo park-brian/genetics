@@ -2,7 +2,7 @@
 
 var stats = new Array(6);
 
-var numTrials = 1000;
+var numTrials = 100;
 var timer = null;
 var counter = 0;
 var heads = 0;
@@ -24,6 +24,9 @@ document.onload = function() {
 
 function generator() {
 
+	numTrials = parseInt(document.getElementById('numTrials').value);
+	var delay = 1000/numTrials;
+
 	if (counter < numTrials) {
 		counter ++;
 		
@@ -33,6 +36,7 @@ function generator() {
 		var coins = "";
 		var allHeads = true;
 		var allTails = true;
+		
 		
 		for (var i = 0; i < val; i ++) {
 			var r = Math.ceil(Math.random() * 12);	// random number from 1-12
@@ -80,7 +84,7 @@ function generator() {
 
 		// ---------- Call Animation Recursively ----------	
 		document.getElementById('coins').innerHTML = coins;
-		timer = setTimeout(generator, 0);
+		timer = setTimeout(generator, delay);
 	}
 	
 	else {
