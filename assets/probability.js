@@ -25,7 +25,7 @@ document.onload = function() {
 function generator() {
 
 	numTrials = parseInt(document.getElementById('numTrials').value);
-	var delay = 1000/numTrials;
+	var delay = 1000/numTrials + 4;
 
 	if (counter < numTrials) {
 		counter ++;
