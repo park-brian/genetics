@@ -47,7 +47,7 @@
 			<p class="italic">The probability of two or more independent events occuring together is found by multiplying their 
 				respective probabilities.</p><br>
 			<p>To illustrate this principle, here are a few examples:</p><br>
-			<h3>1. Coins and Dice</h3>
+			<h3>1. Flipping Coins</h3>
 			<p> 
 			<select id="selector">
 				<option value="2" >2</option>
@@ -56,13 +56,14 @@
 				<option value="5" >5</option>
 				<option value="6" >6</option>
 			</select>
-			coins are flipped
+			coins are flipped. What is the probability of getting all heads?<br>
+			Number of flips:
 			<select id="numTrials">
 				<option value="10" >10</option>
 				<option value="100" >100</option>
 				<option value="1000" >1000</option>
 			</select>
-			times. What is the probability of getting all heads? &nbsp;
+			&nbsp;
 			<button id="flip" class="bt" onclick="generator()">Flip Coins</button></p>
 			
 			<div id="coins" style="height: 100px; text-align: center; margin-top: 10px;">
@@ -95,11 +96,53 @@
 
 			<br>
 			
+			<h3>2. Rolling Dice</h3>
+			<p>
+			<select id="numDice" onchange="generateQuestion()")>
+				<option value="2" >2</option>
+				<option value="3" >3</option>
+				<option value="4" >4</option>
+			</select>
+			dice are rolled. <span id="diceQuestion">What is the probability of getting a one on the first die and an odd number on the second die?</span>
+			<br>
+			Number of rolls:
+			<select id="numRolls">
+				<option value="10" >10</option>
+				<option value="100" >100</option>
+				<option value="1000" >1000</option>
+			</select>
+			&nbsp;
+			<button id="roll" class="bt" onclick="rollDice()">Roll Dice</button></p>			
+			<div id="dice" style="height: 100px; text-align: center; margin-top: 10px;">
+			</div>
 			
+			<div class="center">
+			Total Frequency Table
+			</div>
+			<table class="center">
+				<tr>
+					<th>ones</th>
+					<th>twos</th>
+					<th>threes</th>
+					<th>fours</th>
+					<th>fives</th>
+					<th>sixes</th>
+				</tr>
+				<tr>
+					<td id="1">0</td>
+					<td id="2">0</td>
+					<td id="3">0</td>
+					<td id="4">0</td>
+					<td id="5">0</td>
+					<td id="6">0</td>
+				</tr>
+			</table>
 			<br>
 			<h2>The Addition Rule</h2>
 			<p class="italic">The probability of any one of several different outcomes occuring is found by adding the
-				probabilities of these events.</p> 
+				probabilities of these events.</p>
+			<h3>1. Coins and Dice</h3>
+			<p> 
 		</div>
 	</div>
 </div>
