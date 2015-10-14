@@ -30,7 +30,7 @@ function generateQuestion() {
 
 function rollDice() {
 	numRolls = parseInt(document.getElementById('numRolls').value);
-	var delay = 1000/numRolls;
+	var delay = 400/numRolls;
 	
 	if (counter < numRolls) {
 		counter ++;
@@ -67,7 +67,7 @@ function rollDice() {
 function generator() {
 
 	numTrials = parseInt(document.getElementById('numTrials').value);
-	var delay = 1000/numTrials;
+	var delay = 400/numTrials;
 
 	if (counter < numTrials) {
 		counter ++;
