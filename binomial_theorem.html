@@ -6,7 +6,7 @@
 
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html">
-	<title>GeneTool - Probability and Statistics in Genetics</title>	
+	<title>GeneTool - Probability and Statistics in Genetics</title>
 	<link rel="stylesheet" href="assets/lemonade.min.css">
 	<link rel="stylesheet" href="assets/style.css">
 </head>
@@ -17,7 +17,7 @@
 		<div class="bit-25">
 			<span class="highlight-blue">GENE</span><span class="clear">TOOL</span>
 		</div>
-		
+
 		<div class="bit-75">
 			<div class="header-desc"><span>Mathematics in Genetics</span></div>
 		</div>
@@ -38,11 +38,11 @@
 			<h1>The Binomial Expansion and Probability</h1><br>
 			<p>When using probability, it is important to remember that there are several different ways in which events can occur. Consider the following example: </p><br>
 			<h2>Lactose Intolerance</h2>
-			<p>Lactose intolerance occurs when people fail to express the enzyme lactase, which is required to break down lactose. Lactase persistence is the continued ability of the 
+			<p>Lactose intolerance occurs when people fail to express the enzyme lactase, which is required to break down lactose. Lactase persistence is the continued ability of the
 				enzyme lactase in adulthood. In many mammalian species the activity of this enzyme is reduced after weaning
 				because its only purpose is to help digest the lactose found in milk. However some human populations have developed the ability to digest lactose well into adulthood.
 				Lactose persistence is dominant over the inability to digest lactose (hypolactasia).</p><br>
-			<p>When two parents heterozygous for lactase persistence mate (Ll x Ll), the probability of having a child with lactase persistence is 3/4 (LL or Ll) and the probability 
+			<p>When two parents heterozygous for lactase persistence mate (Ll x Ll), the probability of having a child with lactase persistence is 3/4 (LL or Ll) and the probability
 				of having a child with hypolactasia is 1/4 (ll). </p><br>
 			<p>Suppose we wish to find the probability of this couple having three children who are all lactose-intolerant. In this
 				case we can simply use the multiplication rule: 1/4 x 1/4 x 1/4 = 1/64.</p><br>
@@ -50,8 +50,8 @@
 			<p>This situation requires three uses of the multiplication rule for each possibility - the first child is lactose-persistent and the other two are lactose-intolerant, or
 				the second child is lactose-persistent and the first and third child are lactose-intolerant, or the third child is the only one that is lactose-persistent.</p><br>
 			<p>We would see something like this: 3/4 x 1/4 x 1/4 = 3/64 (Case one) + 1/4 x 3/4 x 1/4 (Case two) + 1/4 x 1/4 x 3/4 (Case three) which gives us a sum total of 9/64.</p><br>
-			<p>Because the complexity of this situation increases dramatically for each additional possibility, it is necessary to use binomial expansion for problems involving more variables.</p><br>	
-			
+			<p>Because the complexity of this situation increases dramatically for each additional possibility, it is necessary to use binomial expansion for problems involving more variables.</p><br>
+
 			<p>A typical binomial expansion looks like the following:</p><br />
 			<p>(p + q)<sup>3</sup> = p<sup>3</sup> + __ p<sup>2</sup>q<sup>1</sup> + __ p<sup>1</sup>q<sup>2</sup> + q<sup>3</sup></p><br />
 			<p>To get the subscripts for the middle two terms of the sequence, you would take the following steps:</p><br />
@@ -67,20 +67,25 @@
 			<p>To get the third term of the sequence you would multiply the subscript of the second term (3) by its power(2) and divide it by the index of the term (2nd term in the sequence)
 				to get (3 * 2)/2 = 3. The completed expansion looks like this:</p><br />
 			<p>(p + q)<sup>3</sup> = p<sup>3</sup> + 3p<sup>2</sup>q<sup>1</sup> + 3p<sup>1</sup>q<sup>2</sup> + q<sup>3</sup></p><br />
-			
+
 			<p>In order to use the binomial expansion to represent a problem, one would simply assign p to one possibility and q to the other possibility. For example,
 			p could be the probability of a child having lactose intolerance and q could be the probability of a child being lactose-tolerant.</p><br />
 			<p>In this case, if the parents are both heterozygous for lactase persistence then the probability of p (lactase persistence) would be 0.75 and the probability of q (lactose intolerance)
 				would be 0.25</p><br />
 			<p>So, in order to figure out the odds of having one child being lactase persistent (p) and two children lactose intolerant (q), we would look at the term for which
-				p is raised to the first power (one child) and q is raised to the second power (two children).</p><br /> 
-				
+				p is raised to the first power (one child) and q is raised to the second power (two children).</p><br />
+
 			<p>This would be the third term, 3p<sup>1</sup>q<sup>2</sup>, so we would plug in p and q into that term to get 3(0.75)<sup>1</sup>(0.25)<sup>2</sup> to get 0.140625, which equals a 14.0625% chance
 				for one child to be lactose persistent and two children being lactose intolerant. You can confirm this by looking at the example above where this is done manually. </p>
-		
-		
-			<h2></h2>
-		
+
+
+			<h2>Sickle-cell Disease</h2>
+			<p>Sickle-cell disease is a hereditary blood disorder characterized by an abnormality in the hemoglobin molecule in red blood cells. This leads to a tendency
+				for the cells to assume an abnormal, sickle-like shape under certain circumstances. These cells are not flexible and can stick to vessel walls, impeding
+			 	the flow of blood. The lack of tissue of tissue oxygen can cause attacks of sudden, severe pain called pain crises. Over a lifetime, SCD can cause major
+				organ damage - eventually leading to death at around 40-60 years of age. </p><br>
+			<p>Sickle-cell disease is a recessive condition that occurs when a person inherits two abnormal copies of the hemoglobin gene (one from each parent). A person
+			 	with a single abnormal copy does not experience symptoms. </p><br>
 		</div>
 	</div>
 </div>
