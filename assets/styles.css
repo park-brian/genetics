@@ -1,0 +1,13 @@
+
+
+/*********** HEADER ***********/ 
+.header {
+    padding: 3rem 0;
+    background-color: #66023C;
+    color: #fedef1;
+    margin-bottom: 3rem;
+}
+
+.header h2 {
+    color: white;
+}   
